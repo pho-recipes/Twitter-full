@@ -1,7 +1,7 @@
 # pho-graphql-v1
 
 type Mention implements MentionEdge 
-@nodes(tail:"Status", head:"User")
+@nodes(tail:"Tweet", head:"User")
 @properties(binding: false, persistent: true, consumer: true, multiplicable: false)
 @labels(headSingular:"mention", headPlural: "mentions", tailSingular: "notification", tailPlural: "notifications")
 {
