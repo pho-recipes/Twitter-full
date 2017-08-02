@@ -1,7 +1,7 @@
 # pho-graphql-v1
 
 type User implements ActorNode 
-@edges(in:"User:Follow, Status:Mention, User:Consume, User:Messafe", out:"Post, Like, Follow, Consume, Message")
+@edges(in:"User:Follow, Tweet:Mention, User:Consume, User:Messafe", out:"Post, Like, Follow, Consume, Message")
 @permissions(mod: "0x07554", mask: "0xfffff") # user themselves, can manage, members can subscribe, outsiders can just read.
 @properties(editable: false, volatile: false, revisionable: false)
 {
