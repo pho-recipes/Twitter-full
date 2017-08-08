@@ -39,7 +39,7 @@ class MessagePredicate extends Foundation\ObjectOut\MentionPredicate
     protected $binding = false;
     protected $multiplicable = true;
     
-    const T_CONSUMER = true;
+    const T_CONSUMER = false;
     const T_NOTIFIER = false;
     const T_SUBSCRIBER = false;
     const T_FORMATIVE = false;
