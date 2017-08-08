@@ -2,7 +2,7 @@
 
 type Message implements MentionEdge 
 @nodes(tail:"User", head:"User")
-@properties(binding: false, persistent: true, consumer: true, multiplicable: true)
+@properties(binding: false, persistent: true, consumer: false, multiplicable: true)
 @labels(headSingular:"outgoingmessage", headPlural: "outgoingmessages", tailSingular: "incomingmessage", tailPlural: "incomingmessages")
 {
     id: ID!,
