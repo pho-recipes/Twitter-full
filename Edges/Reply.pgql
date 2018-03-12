@@ -1,1 +1,10 @@
 
+# pho-graphql-v1
+
+type Reply implements MentionEdge 
+@nodes(tail:"Tweet", head:"Tweet")
+@properties(binding: true, persistent: true, consumer: true, multiplicable: false)
+@labels(headSingular:"reply", headPlural: "replies", tailSingular: "replier", tailPlural: "repliers")
+{
+    id: ID!
+}
