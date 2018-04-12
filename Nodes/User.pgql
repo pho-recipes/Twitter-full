@@ -8,6 +8,6 @@ type User implements ActorNode
     id: ID!,
     password: String! @md5 @constraints(regex: "/^[a-zA-Z0-9_]{4,12}$/"),
     join_time: Date! @now
-    birthday: Date @default(Int: 411436800),
+    birthday: Date @default(String: "01/15/1983"),
     about: String @constraints(maxLength: 255,) @default(String: ""),
 }
