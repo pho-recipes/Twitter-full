@@ -27,6 +27,9 @@ class Tweet extends Foundation\AbstractObjectDP {
 
     const FIELDS = "{\"content\":{\"constraints\":{\"minLength\":null,\"maxLength\":\"140\",\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
+    const FEED_SIMPLE = "";
+    const FEED_AGGREGATED = "";
+
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $content)
     {
         $this->registerIncomingEdges(UserOut\Post::class);
@@ -44,8 +47,8 @@ class Tweet extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1523556738
- * Size (in bytes): 2119
+ * Timestamp: 1523668273
+ * Size (in bytes): 2180
  * Compilation Time: 12
- * 784c84143660b2043924b8ddc1b77848
+ * 51136edc8d17d9b858526ca7cf48e5db
  ******************************************************/
