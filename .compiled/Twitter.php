@@ -41,8 +41,8 @@ class Twitter extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1523673259
+ * Timestamp: 1523674986
  * Size (in bytes): 1525
  * Compilation Time: 12
- * 4c190eb317334e6d8922dad15ff0970f
+ * 2107f5eaeaef0ee7bbc6afc0e5891c95
  ******************************************************/
