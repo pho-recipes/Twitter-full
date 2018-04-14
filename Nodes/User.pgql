@@ -6,7 +6,7 @@ type User implements ActorNode
 @properties(editable: false, volatile: false, revisionable: false)
 {
     id: ID!,
-    username: String! @unique @constraints(regex: "/^[_[a-z0-9]]{1,18}$/"),
+    username: String! @unique @constraints(regex: "/^[_a-z0-9]{1,18}$/"),
     password: String! @md5 @constraints(regex: "/^[a-zA-Z0-9_]{4,12}$/"),
     join_time: Date! @now
     birthday: Date @default(String: "01/15/1983"),
