@@ -36,13 +36,14 @@ class Twitter extends Foundation\AbstractGraphDP {
                 $this->setFounder($founder, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676758
- * Size (in bytes): 1525
- * Compilation Time: 12
- * 6516181e15c7298fff0c87f5c190fd84
+ * Timestamp: 1524372083
+ * Size (in bytes): 1585
+ * Compilation Time: 13
+ * f20e92d32082bb58daf44b85f8a676c2
  ******************************************************/

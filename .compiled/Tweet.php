@@ -42,13 +42,14 @@ class Tweet extends Foundation\AbstractObjectDP {
         $this->setCreateTime(time(), true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676758
- * Size (in bytes): 2180
+ * Timestamp: 1524372083
+ * Size (in bytes): 2240
  * Compilation Time: 12
- * ef1282fd3b43e51e2eb3ff98b6b2ccd2
+ * f106cda34ea23823b449a6031c19ddff
  ******************************************************/
