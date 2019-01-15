@@ -60,8 +60,8 @@ class User extends Foundation\AbstractActorDP {
 }
 
 /*****************************************************
- * Timestamp: 1547536738
+ * Timestamp: 1547537600
  * Size (in bytes): 3982
- * Compilation Time: 89
- * cafdaf78511819ca800eb9b05d04ffa0
+ * Compilation Time: 88
+ * d7b97e1488c87a0a3e8afd67efb89a11
  ******************************************************/
